@@ -14,6 +14,8 @@ func main() {
   switch os.Args[1] {
   case "run":
 	  container.Run(os.Args[2:])
+  case "child":
+	  container.Child(os.Args[2:])
   default:
 	  fmt.Println("Unknown command:", os.Args[1])
   }
